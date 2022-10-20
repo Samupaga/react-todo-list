@@ -19,7 +19,7 @@ function App() {
         <header>Samuele's Todo List</header>
         <TodoForm setInputText={setInputText} setTodos={setTodos} todos={todos} inputText={inputText}/>
         <TodoFilter setFilteredTodos={setFilteredTodos} status={status} setStatus={setStatus} todos={todos}/>
-        <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos}/>
+        <TodoList filteredTodos={filteredTodos} todos={todos} setTodos={setTodos} />
       </div>
     
   );

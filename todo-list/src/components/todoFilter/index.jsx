@@ -21,6 +21,7 @@ function TodoFilter({status, setStatus, todos, setFilteredTodos}) {
 
     }
 
+    // need useEffect as we want to-do list to render everytime filter is changed
     useEffect(() => {
         handleFilter()
     }, [todos, status]);
